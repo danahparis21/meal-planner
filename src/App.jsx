@@ -1,15 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import Rope from "./components/Rope.jsx";
 
-function App() {
-
+export default function App() {
   return (
-    <div className="text-3xl font-bold text-pink-500">
-      🍱 Meal Planner works!
+    <div className="w-screen h-screen bg-gradient-to-b from-blue-200 to-blue-400 flex justify-center items-start p-10 relative overflow-hidden">
+      <Rope />
     </div>
-  )
+  );
 }
-
-export default App
