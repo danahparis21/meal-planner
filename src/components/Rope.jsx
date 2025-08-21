@@ -36,7 +36,7 @@ export default function Rope() {
     const { active, over } = event;
     
     if (over && active.id !== over.id) {
-      // Update the paper's attachedTo property
+    
       setPapers(papers.map(paper => 
         paper.id === active.id ? { ...paper, attachedTo: over.id } : paper
       ));
